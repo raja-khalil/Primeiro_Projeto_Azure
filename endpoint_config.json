@@ -1,0 +1,18 @@
+{
+  "endpoint_name": "modelo-preditivo",
+  "url": "https://<seu-endpoint>.azurewebsites.net/score",
+  "authentication": {
+    "type": "key",
+    "primary_key": "your_primary_key_here",
+    "secondary_key": "your_secondary_key_here"
+  },
+  "description": "Ponto de extremidade configurado para o modelo preditivo desenvolvido no Azure Machine Learning",
+  "deployment_details": {
+    "compute_instance": "Standard_DS11_v2",
+    "environment": "Azure ML",
+    "scaling": {
+      "min_instances": 1,
+      "max_instances": 10
+    }
+  }
+}
